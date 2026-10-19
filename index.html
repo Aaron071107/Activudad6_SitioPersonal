@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal de un estudiante de Desarrollo de Software de la Universidad Tecnológica de León: perfil, habilidades y proyectos académicos.">
+  <meta name="keywords" content="portafolio personal, desarrollo de software, Bootstrap 5, programación, diseño web, proyectos académicos">
+  <meta name="theme-color" content="#0d6efd">
+  <title>Mi Portafolio Personal | Desarrollo de Software</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="./css/estilos.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio"><i class="bi bi-code-slash me-2" aria-hidden="true"></i>Mi Portafolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          <a class="nav-link" href="#proyectos">Mis proyectos</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio">
+    <div id="carruselPortafolio" class="carousel slide carrusel-portafolio" data-bs-ride="carousel" data-bs-interval="5000" aria-label="Presentación personal">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carruselPortafolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+        <button type="button" data-bs-target="#carruselPortafolio" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+        <button type="button" data-bs-target="#carruselPortafolio" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" class="d-block w-100" alt="Escritorio con computadora de programación">
+          <div class="carousel-caption"><h1 class="fw-bold">Bienvenido a mi Portafolio</h1><p>Soy estudiante de Desarrollo de Software y me apasiona aprender nuevas tecnologías.</p><a href="#sobre-mi" class="btn btn-primary">Conoce más sobre mí</a></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" class="d-block w-100" alt="Código de programación en una pantalla" loading="lazy">
+          <div class="carousel-caption"><h2 class="fw-bold">Mis habilidades</h2><p>Desarrollo mis conocimientos en programación y diseño de páginas web.</p><a href="#sobre-mi" class="btn btn-primary">Conocer habilidades</a></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" class="d-block w-100" alt="Equipo utilizando herramientas digitales" loading="lazy">
+          <div class="carousel-caption"><h2 class="fw-bold">Mis proyectos</h2><p>Conoce algunos trabajos realizados durante mi formación académica.</p><a href="#proyectos" class="btn btn-primary">Ver proyectos</a></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselPortafolio" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselPortafolio" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre-mi" class="py-5" aria-labelledby="titulo-sobre-mi">
+      <div class="container"><div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <h2 class="fw-bold mb-3" id="titulo-sobre-mi"><i class="bi bi-person-circle text-primary me-2" aria-hidden="true"></i>Sobre mí</h2>
+          <h3 class="h4 text-primary mb-3">Estudiante de Desarrollo de Software</h3>
+          <p class="text-muted">Hola, bienvenido a mi portafolio personal. Actualmente estudio Desarrollo de Software, una carrera que me permite conocer nuevas tecnologías y aprender a crear aplicaciones.</p>
+          <p class="text-muted">Me interesa seguir desarrollando mis habilidades en programación, diseño de páginas web y creación de proyectos. Me gusta aprender cosas nuevas y mejorar mis conocimientos con cada actividad.</p>
+          <h4 class="h5 fw-bold mt-4">Tecnologías que estoy aprendiendo</h4>
+          <div class="d-flex flex-wrap gap-2 mt-3"><span class="badge bg-primary p-2">HTML</span><span class="badge bg-primary p-2">CSS</span><span class="badge bg-primary p-2">Bootstrap 5</span><span class="badge bg-primary p-2">Programación</span></div>
+          <a href="#proyectos" class="btn btn-primary mt-4">Ver mis proyectos <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-12 col-lg-5"><div class="card tarjeta-perfil border-0 shadow"><div class="card-body text-center p-5">
+          <i class="bi bi-code-square icono-perfil" aria-hidden="true"></i><h3 class="fw-bold mt-3">Mi perfil</h3><p class="text-primary fw-semibold">Desarrollo de Software</p><p class="text-muted">Aprendiendo, creando y desarrollando nuevas ideas a través de la tecnología.</p><hr><div class="d-flex justify-content-center gap-4"><i class="bi bi-code-slash fs-3 text-primary" aria-hidden="true"></i><i class="bi bi-laptop fs-3 text-primary" aria-hidden="true"></i><i class="bi bi-globe fs-3 text-primary" aria-hidden="true"></i></div>
+        </div></div></div>
+      </div></div>
+    </section>
+
+    <section id="proyectos" class="py-5" aria-labelledby="titulo-proyectos"><div class="container">
+      <div class="text-center mb-5"><h2 class="fw-bold" id="titulo-proyectos"><i class="bi bi-folder2-open text-primary me-2" aria-hidden="true"></i>Mis proyectos</h2><p class="text-muted">Algunos de los trabajos que he realizado durante mi formación académica.</p></div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4"><article class="card tarjeta-proyecto h-100">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&amp;fit=crop&amp;w=800&amp;q=85" class="card-img-top" alt="Pantalla con herramientas de desarrollo web" loading="lazy">
+          <div class="card-body d-flex flex-column"><h3 class="card-title h5 fw-bold">Servicios de Oficio Local (SoL)</h3><p class="card-text text-muted">Prototipo de una plataforma web que busca conectar clientes con prestadores de servicios de oficio.</p><div class="mb-3"><span class="badge bg-primary">Figma</span> <span class="badge bg-secondary">Diseño web</span></div><button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#detalleSol" aria-expanded="false" aria-controls="detalleSol"><i class="bi bi-eye me-2" aria-hidden="true"></i>Ver detalles</button><div class="collapse mt-3" id="detalleSol"><p class="text-muted small mb-0">Diseño de interfaces para facilitar la comunicación entre personas que necesitan un servicio y quienes pueden ofrecerlo.</p></div></div>
+        </article></div>
+        <div class="col-12 col-md-6 col-lg-4"><article class="card tarjeta-proyecto h-100">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=800&amp;q=85" class="card-img-top" alt="Equipo de trabajo utilizando tecnología" loading="lazy">
+          <div class="card-body d-flex flex-column"><h3 class="card-title h5 fw-bold">Lumina Solutions</h3><p class="card-text text-muted">Proyecto académico de análisis de requerimientos, documentación y diagramas de software.</p><div class="mb-3"><span class="badge bg-primary">UML</span> <span class="badge bg-secondary">Análisis</span></div><button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#detalleLumina" aria-expanded="false" aria-controls="detalleLumina"><i class="bi bi-eye me-2" aria-hidden="true"></i>Ver detalles</button><div class="collapse mt-3" id="detalleLumina"><p class="text-muted small mb-0">Documentación y diagramas de casos de uso para representar las funciones e interacciones de un sistema.</p></div></div>
+        </article></div>
+        <div class="col-12 col-md-6 col-lg-4"><article class="card tarjeta-proyecto h-100">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=800&amp;q=85" class="card-img-top" alt="Código de programación en computadora" loading="lazy">
+          <div class="card-body d-flex flex-column"><h3 class="card-title h5 fw-bold">Programación en Kotlin</h3><p class="card-text text-muted">Prácticas de programación con colecciones, funciones y estructuras de control.</p><div class="mb-3"><span class="badge bg-primary">Kotlin</span> <span class="badge bg-secondary">Programación</span></div><button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#detalleKotlin" aria-expanded="false" aria-controls="detalleKotlin"><i class="bi bi-eye me-2" aria-hidden="true"></i>Ver detalles</button><div class="collapse mt-3" id="detalleKotlin"><p class="text-muted small mb-0">Ejercicios para comprender listas, conjuntos, funciones y condiciones en Kotlin.</p></div></div>
+        </article></div>
+      </div>
+    </div></section>
+
+    <section id="contacto" class="py-5 seccion-contacto" aria-labelledby="titulo-contacto"><div class="container">
+      <div class="text-center mb-5"><h2 class="fw-bold" id="titulo-contacto"><i class="bi bi-envelope-paper text-primary me-2" aria-hidden="true"></i>Contacto</h2><p class="text-muted">¿Tienes alguna pregunta o quieres conocer más sobre mis proyectos?</p></div>
+      <div class="row g-4">
+        <div class="col-12 col-lg-4"><div class="card tarjeta-contacto border-0 shadow-sm h-100"><div class="card-body p-4"><i class="bi bi-chat-dots-fill icono-contacto" aria-hidden="true"></i><h3 class="fw-bold mt-3">Hablemos</h3><p class="text-muted">Aquí puedes dejar tus comentarios, preguntas o sugerencias relacionadas con mis proyectos.</p><hr><h4 class="h5 fw-bold mb-3">Información</h4><p><i class="bi bi-mortarboard-fill text-primary me-2" aria-hidden="true"></i>Universidad Tecnológica de León</p><p><i class="bi bi-code-slash text-primary me-2" aria-hidden="true"></i>Desarrollo de Software</p><p><i class="bi bi-laptop text-primary me-2" aria-hidden="true"></i>Programación y diseño web</p></div></div></div>
+        <div class="col-12 col-lg-8"><div class="card formulario-contacto border-0 shadow-sm"><div class="card-body p-4"><h3 class="h4 fw-bold mb-4">Formulario de contacto</h3>
+          <form id="formContacto" novalidate><div class="row g-3">
+            <div class="col-12 col-md-6"><label for="nombre" class="form-label">Nombre completo</label><input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name" placeholder="Escribe tu nombre" required><div class="invalid-feedback">Ingresa tu nombre.</div></div>
+            <div class="col-12 col-md-6"><label for="correo" class="form-label">Correo electrónico</label><input type="email" class="form-control" id="correo" name="correo" autocomplete="email" placeholder="ejemplo@correo.com" required><div class="invalid-feedback">Ingresa un correo válido.</div></div>
+            <div class="col-12"><label for="telefono" class="form-label">Teléfono (opcional)</label><input type="tel" class="form-control" id="telefono" name="telefono" autocomplete="tel" placeholder="Número de teléfono"></div>
+            <div class="col-12"><label for="asunto" class="form-label">Asunto</label><select class="form-select" id="asunto" name="asunto" required><option value="" selected disabled>Selecciona una opción</option><option value="proyectos">Información sobre proyectos</option><option value="programacion">Preguntas de programación</option><option value="sugerencias">Sugerencias</option><option value="otro">Otro asunto</option></select><div class="invalid-feedback">Selecciona un asunto.</div></div>
+            <div class="col-12"><label for="mensaje" class="form-label">Escribe tu mensaje</label><textarea class="form-control" id="mensaje" name="mensaje" rows="4" minlength="10" placeholder="Escribe aquí tu mensaje..." required></textarea><div class="invalid-feedback">Escribe al menos 10 caracteres.</div></div>
+            <fieldset class="col-12"><legend class="form-label fw-bold fs-6">Medio de contacto preferido</legend><div class="form-check"><input class="form-check-input" type="radio" name="medioContacto" id="medioCorreo" value="correo" checked><label class="form-check-label" for="medioCorreo">Correo electrónico</label></div><div class="form-check"><input class="form-check-input" type="radio" name="medioContacto" id="medioTelefono" value="telefono"><label class="form-check-label" for="medioTelefono">Teléfono</label></div></fieldset>
+            <fieldset class="col-12"><legend class="form-label fw-bold fs-6">Temas de interés (opcional)</legend><div class="d-flex flex-wrap gap-3"><div class="form-check"><input class="form-check-input" type="checkbox" id="interes1" name="intereses" value="desarrollo"><label class="form-check-label" for="interes1">Desarrollo web</label></div><div class="form-check"><input class="form-check-input" type="checkbox" id="interes2" name="intereses" value="programacion"><label class="form-check-label" for="interes2">Programación</label></div><div class="form-check"><input class="form-check-input" type="checkbox" id="interes3" name="intereses" value="diseno"><label class="form-check-label" for="interes3">Diseño</label></div></div></fieldset>
+            <div class="col-12"><p class="small text-muted mb-0"><i class="bi bi-info-circle me-1" aria-hidden="true"></i>Formulario de demostración académica. Los datos no se envían ni almacenan.</p></div>
+            <div class="col-12"><div class="d-flex flex-wrap gap-2"><button type="submit" class="btn btn-primary"><i class="bi bi-check-circle me-2" aria-hidden="true"></i>Validar formulario</button><button type="reset" class="btn btn-secondary"><i class="bi bi-arrow-clockwise me-2" aria-hidden="true"></i>Borrar</button></div></div>
+            <div class="col-12"><div id="mensajeFormulario" class="alert alert-success d-none" role="status" aria-live="polite"></div></div>
+          </div></form>
+        </div></div></div>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="pie-pagina text-white pt-5 pb-3"><div class="container"><div class="row g-4">
+    <div class="col-12 col-md-4"><h3 class="h5 fw-bold mb-3"><i class="bi bi-code-slash me-2" aria-hidden="true"></i>Mi Portafolio</h3><p>Portafolio de un estudiante de Desarrollo de Software de la Universidad Tecnológica de León.</p><p class="small">Un espacio para compartir mis proyectos, conocimientos e intereses.</p></div>
+    <div class="col-6 col-md-4"><h3 class="h6 fw-bold mb-3">Explora</h3><ul class="list-unstyled"><li class="mb-2"><a href="#inicio" class="enlace-footer">Inicio</a></li><li class="mb-2"><a href="#sobre-mi" class="enlace-footer">Sobre mí</a></li><li class="mb-2"><a href="#proyectos" class="enlace-footer">Mis proyectos</a></li><li class="mb-2"><a href="#contacto" class="enlace-footer">Contacto</a></li></ul></div>
+    <div class="col-6 col-md-4"><h3 class="h6 fw-bold mb-3">Sobre el sitio</h3><p class="small">Página web desarrollada con HTML5, CSS3 y Bootstrap 5 para una actividad académica.</p><a href="#inicio" class="enlace-footer"><i class="bi bi-arrow-up-circle me-2" aria-hidden="true"></i>Volver arriba</a></div>
+  </div><hr class="border-light opacity-25 my-4"><div class="text-center"><p class="small mb-0">&copy; 2026 Mi Portafolio Personal. Proyecto académico.</p></div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

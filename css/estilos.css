@@ -1,0 +1,52 @@
+/* Portafolio personal — estilos complementarios a Bootstrap 5 */
+:root { --azul:#0d6efd; --azul-profundo:#174a91; }
+html { scroll-behavior:smooth; }
+body { font-family:Arial,Helvetica,sans-serif; background:#fff; }
+[id] { scroll-margin-top:80px; }
+.navbar { box-shadow:0 2px 8px rgba(0,0,0,.08); }
+.carrusel-portafolio .carousel-item { position:relative; }
+.carrusel-portafolio .carousel-item img { width:100%; height:480px; object-fit:cover; }
+.carrusel-portafolio .carousel-item::after { content:""; position:absolute; inset:0; background:rgba(0,0,0,.62); z-index:1; pointer-events:none; }
+.carrusel-portafolio .carousel-caption { top:0; bottom:0; z-index:2; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px 38px 35px; }
+.carrusel-portafolio h1,.carrusel-portafolio h2 { font-size:clamp(1.55rem,4vw,2.8rem); color:#8ed8ff; text-shadow:2px 3px 8px #000; }
+.carrusel-portafolio p { font-size:clamp(.95rem,1.7vw,1.2rem); font-weight:500; color:#f1f5f9; max-width:650px; text-shadow:2px 2px 6px #000; }
+.carrusel-portafolio .btn { border-radius:25px; padding:10px 25px; }
+#sobre-mi { background:#f8f9fa; }
+#sobre-mi h2,#proyectos h2,#contacto h2 { color:#212529; font-size:clamp(1.8rem,3vw,2.3rem); }
+#sobre-mi p { line-height:1.8; }
+.tarjeta-perfil { background:#e9f2ff; border-radius:20px; transition:transform .3s ease; }
+.tarjeta-perfil:hover { transform:translateY(-5px); }
+.icono-perfil { font-size:80px; color:var(--azul); }
+#proyectos { background:#fff; }
+.tarjeta-proyecto { border:1px solid #e5e7eb; border-radius:15px; overflow:hidden; background:white; box-shadow:0 4px 15px rgba(0,0,0,.08); transition:transform .3s ease, box-shadow .3s ease; }
+.tarjeta-proyecto:hover { transform:translateY(-8px); box-shadow:0 10px 25px rgba(0,0,0,.15); }
+.tarjeta-proyecto .card-img-top { width:100%; height:220px; object-fit:cover; }
+.tarjeta-proyecto .card-body { padding:25px; }
+.tarjeta-proyecto .card-title { color:var(--azul-profundo); }
+.tarjeta-proyecto .card-text { line-height:1.7; }
+.tarjeta-proyecto .btn { border-radius:8px; padding:10px; font-weight:500; }
+.seccion-contacto { background:#f5f8fc; }
+.tarjeta-contacto { background:#e9f2ff; border-radius:15px; }
+.tarjeta-contacto h3 { color:var(--azul-profundo); }
+.tarjeta-contacto p { line-height:1.7; }
+.icono-contacto { font-size:60px; color:var(--azul); }
+.formulario-contacto { background:#fff; border-radius:15px; }
+.formulario-contacto .form-control,.formulario-contacto .form-select { border-radius:8px; padding:12px; }
+.formulario-contacto .form-control:focus,.formulario-contacto .form-select:focus { border-color:var(--azul); box-shadow:0 0 5px rgba(13,110,253,.25); }
+.formulario-contacto .btn { border-radius:8px; padding:10px 20px; }
+.pie-pagina { background:#14263f; }
+.pie-pagina p { color:#d6e2f1; line-height:1.7; }
+.pie-pagina h3 { color:#fff; }
+.enlace-footer { color:#d6e2f1; text-decoration:none; transition:color .3s ease; }
+.enlace-footer:hover,.enlace-footer:focus-visible { color:#8ed8ff; text-decoration:underline; }
+@media(max-width:576px){
+  .carrusel-portafolio .carousel-item img { height:420px; }
+  .carrusel-portafolio .carousel-caption { padding:14px 34px 28px; }
+  .carrusel-portafolio .btn { font-size:.85rem; padding:8px 15px; }
+  .icono-perfil { font-size:65px; }
+  .tarjeta-proyecto .card-img-top { height:200px; }
+  .tarjeta-proyecto .card-body { padding:20px; }
+  .formulario-contacto .card-body { padding:20px!important; }
+  .icono-contacto { font-size:45px; }
+}
+@media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} .tarjeta-perfil,.tarjeta-proyecto{transition:none;} .tarjeta-perfil:hover,.tarjeta-proyecto:hover{transform:none;} }
